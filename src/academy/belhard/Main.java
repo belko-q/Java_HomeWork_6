@@ -6,19 +6,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String str1 = "abcdefghijklmnopqrstuvwxyz";
+        Vehicle[] vehicle = new Vehicle[4];
+        vehicle[0] = new Car(4, 2);
+        vehicle[1] = new Car(4, 5);
+        vehicle[2] = new Motorcycle(2, 170);
+        vehicle[3] = new Motorcycle(2, 210);
 
-        for (int i = 0; i < 26; i++) {
-            Random r = new Random();
-            int result = r.nextInt(str1.length());
-            char s0 = str1.charAt(result);
-            System.out.print(s0);
 
-        }
-        System.out.println();
+        vehicle[0].printInfo();
+        vehicle[1].printInfo();
+        vehicle[2].printInfo();
+        vehicle[3].printInfo();
 
     }
-
-
 
 }
